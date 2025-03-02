@@ -23,7 +23,7 @@
 To install the application, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone <YOUR_GIT_URL>
+   git clone https://github.com/prabhatpushp/novelnexus
    cd novelnexus
    ```
 2. Install the necessary dependencies:
