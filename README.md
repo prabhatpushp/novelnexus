@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NovelNexus
 
-## Getting Started
+## Introduction
+**NovelNexus** is a web application developed using Next.js, designed to provide authors with a comprehensive platform for writing, editing, and managing their novels. The application features a user-friendly interface that enhances the writing experience, allowing authors to focus on their creativity without distractions.
 
-First, run the development server:
+## Features
+- **Rich Text Editor**: A powerful editor that facilitates the writing and formatting of novels with ease.
+- **Zen Mode**: A distraction-free writing environment that enables authors to immerse themselves fully in their work.
+- **User Accounts**: Authors can create accounts to save their novels and track their writing progress effectively.
+- **Responsive Design**: The application is optimized for both desktop and mobile devices, ensuring accessibility for all users.
+- **Search Functionality**: Quickly locate novels by title or author.
+- **Bookmarking**: Save your favorite novels for easy access at any time.
+- **Dark Mode Toggle**: Switch between light and dark themes to enhance the writing experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
+- **Next.js**: A React framework for building server-side rendered applications.
+- **React**: Utilized for constructing user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+- **TypeScript**: Provides type safety and enhances the development experience.
+- **Editor.js**: A block-styled editor for creating and managing novel content.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
+To install the application, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd novelnexus
+   ```
+2. Install the necessary dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
+To run the NovelNexus application, execute the following steps:
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+2. Open the application in your web browser at `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Components Overview
+- **Header Component**: Contains navigation links and user controls, including a toggle for dark/light themes.
+- **Main Navigation**: Provides links to various sections of the application, such as Home, Projects, Editor, and Notes.
+- **User Navigation**: Displays the user's avatar and offers a dropdown menu for user-related actions.
+- **Mode Toggle**: Enables users to switch between light and dark themes.
+- **EditorContainer**: The primary component for writing and editing novels.
+- **Card Component**: A reusable component for presenting novel information in an aesthetically pleasing format.
+- **Form Component**: Utilizes React Hook Form for managing user input and validation.
 
-## Learn More
+## Utilities
+- **Class Name Utility**: The `cn` function conditionally merges class names, ensuring that styles are applied correctly.
 
-To learn more about Next.js, take a look at the following resources:
+## Hooks
+- **useToast Hook**: Implements a customizable toast notification system inspired by the react-hot-toast library, providing user feedback on actions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
+Contributions to the project are welcome! If you would like to contribute, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes and create a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
